@@ -1,10 +1,10 @@
 function validate(){
 
 
-var password              = document.getElementById("password_input");
-var password_confirmation = document.getElementById("password_confirmation_input");
+var password              = document.getElementById("password_input").value;
+var password_confirmation = document.getElementById("password_confirmation_input").value;
 var alert_message = "\n Please Try again."
-alert(password + "  " + password_confirmation);
+//alert(password + "  " + password_confirmation);
 if(password != password_confirmation)
     {
         alert_message = "Password and Password Confirmation do not match." + alert_message;
